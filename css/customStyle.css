@@ -12,3 +12,7 @@
     z-index: 999;
     top: 0;
 }
+
+.skills-inc {
+  display: inline-flex;
+}
