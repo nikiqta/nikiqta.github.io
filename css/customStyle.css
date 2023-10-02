@@ -16,3 +16,7 @@
 .skills-inc {
   display: inline-flex;
 }
+
+bold-text {
+  font-weight: bold;
+}
