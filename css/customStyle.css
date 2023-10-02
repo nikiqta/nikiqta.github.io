@@ -3,9 +3,13 @@
   background-position: center;
   background-repeat: no-repeat; }
 
-  #italic {
+#italic {
     font-style: italic;
-  }
+}
+
+#bold {
+  font-weight: bold;
+}
 
 .card-header, #cerf img {
   cursor: pointer; }
@@ -19,8 +23,4 @@
 
 .skills-inc {
   display: inline-flex;
-}
-
-bold-text {
-  font-weight: bold;
 }
