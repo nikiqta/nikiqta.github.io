@@ -1,26 +1,105 @@
-#projectSec {
-  background: url("../images/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat; }
-
-#italic {
-    font-style: italic;
+/* Typography & base layout */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
 }
 
-#bold {
-  font-weight: bold;
+/* Account for fixed navbar */
+.main-content {
+  padding-top: 90px;
 }
 
-.card-header, #cerf img {
-  cursor: pointer; }
-
-.header-menu {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    top: 0;
+/* Utility replacements for ids */
+.bold {
+  font-weight: 600;
 }
 
-.skills-inc {
-  display: inline-flex;
+.italic {
+  font-style: italic;
+}
+
+/* About section */
+.about-photo {
+  max-width: 220px;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.75rem;
+}
+
+/* Progress bars */
+.progress {
+  height: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #18bc9c; /* Flatly accent color */
+}
+
+/* Certificates */
+.certificate-thumb {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  height: 160px;         /* uniform thumbnail height */
+  object-fit: contain;   
+  background-color: white;
+  padding: 4px;
+}
+
+.certificate-thumb:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+#certificates .modal-dialog img {
+  border-radius: 0.5rem;
+}
+
+/* Fade-in animation for sections */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar tweaks */
+.header-menu .navbar-brand {
+  font-weight: 700;
+}
+
+.header-menu .nav-link {
+  font-weight: 500;
+}
+
+.header-menu .nav-link.active,
+.header-menu .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
 }
